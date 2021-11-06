@@ -1,0 +1,104 @@
+/*General*/
+@import "font.css";
+@import "../Js/project-2.js";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*HeaderMenu*/
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+}
+
+#headerMenu {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14171c;
+}
+
+#headerMenu label {
+    width: 90%
+}
+
+#headerMenu label input {
+    width: 100%;
+    border-radius: 3px;
+    color: #8a8d94;
+}
+
+#headerMenu button {
+    width: 5%;
+    border: none;
+    text-align: center;
+    background-color: #14171c;
+    color: #8a8d94;
+}
+
+/*MovieGallery*/
+#mainContainer {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8e8e8;
+}
+
+#mainContainerTitle{
+    width: 95%;
+    height: 7vh;
+    color: #292637;
+}
+
+#movieGallery{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content:space-around ;
+}
+
+#movieInformation{
+    width: 20%;
+    margin: 10px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#movieInformation-Image{
+    width: 100%;
+}
+
+#movieInformation-Name {
+    color:  #14171c;
+}
+
+#movieInformation-Rate {
+    color: #83abde;
+}
+
+#movieInformation h5{
+    color: #a2a2a2;
+}
+
+#movieInformation h2, h4, h5, p {
+    width: 40%;
+    display: inline-block;
+}
+
+

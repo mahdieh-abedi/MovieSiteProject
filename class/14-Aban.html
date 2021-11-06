@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="14-Aban.css">
+</head>
+<body>
+<div id="container">
+    <p class="firstP">First P Element</p>
+    <p class="secondP">Second P Element</p>
+    <div>
+        <button id="windowController">Click On Me</button>
+    </div>
+    <div>
+        <a id="openGoogle">Open Google</a>
+    </div>
+</div>
+<script>
+    const firstP = document.getElementsByClassName('firstP')[0]
+    const secondP = document.getElementsByClassName('secondP')[0]
+    const container = document.getElementById('container')
+    const newPElement = document.createElement("P")
+    // const PElementContent = document.createTextNode("New P Element")
+    // newPElement.append(PElementContent)
+    // container.append(newPElement)
+    newPElement.innerHTML = "New P Element"
+    // const openGoogle = document.getElementById('openGoogle')
+
+    const changeContent = () => {
+        console.log("First P Element Clicked!")
+        firstP.textContent = "Content is Changed!"
+    }
+    const changeBGColor = () => {
+        secondP.style.backgroundColor = "red"
+        container.style.backgroundColor = "white"
+    }
+
+    const windowController = document.getElementById("windowController")
+    window.onresize = () => {
+        windowController.textContent = `width: ${window.innerWidth} height: ${window.innerHeight}`
+    }
+    container.append(secondP, windowController)
+
+    // function openGoogle() {
+    //     console.log(location)
+    //     window.open("https://google.com", 'googleWindow')
+    // }
+
+    firstP.addEventListener('click', changeContent)
+    secondP.addEventListener('click', changeBGColor)
+    container.insertBefore(newPElement, firstP)
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+#container{
+    background-color: #9393b2;
+}
+.secondP{
+    background-color: #a99485;
+}
+windowController{
+    width: auto;
+    height: auto;
+    background-color: grey;
+    border-radius: 5px;
+}
