@@ -1,35 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Movie-Site-Project</title>
-    <link rel="stylesheet" href="../Style/project.css">
+    <link rel="stylesheet" href="../Style/project.css" type="text/css">
 <body>
-<div id="container">
-    <div id="headerMenu">
-        <label id="searchBar" for="search">
-            <input type="search" id="search" alt="text" value="Search">
-        </label>
-        <button>SignUp</button>
+<div id="fullPage" class="flex-column">
+    <div id="header" class="flex-row-wrap">
+        <div id="header__content" class="flex-row-wrap">
+            <label for="search">
+                <input type="search" id="search" alt="text" value="Search">
+            </label>
+            <button>SignUp</button>
+        </div>
     </div>
-    <div id="mainContainer">
-        <div id="mainContainerTitle">
+    <div id="main" class="flex-column">
+        <div id="main__title">
             <h1>Movies</h1>
         </div>
-        <div id="movieGallery">
-            <div id="movieInformation">
-                <img id="movieInformation-Image" src="../Img/1917.jfif" alt="1971">
-                <h2 id="movieInformation-Name">1971</h2>
-                <h4 id="movieInformation-Rate" style="text-align: right">8.1<span style=" color: #14171c">/10</span></h4>
-                <h5>Last Update</h5>
-                <h5 style="text-align: right">Running Time</h5>
-                <p id="movieInformation-LastUpdate">2007</p>
-                <p id="movieInformation-RunningTime" style="text-align: right">2</p>
+        <div id="main__content" class="flex-row-wrap">
+            <div id="movie" class="flex-column">
+                <img id="movie__img" src="../Img/AvengersEndgame.jpg" alt="1971">
+                <div id="movie__info" class="flex-column">
+                    <div class="info flex-row-wrap">
+                        <h2>1971</h2>
+                        <div style="text-align: right">
+                            <span id="rate__input">8.1</span>
+                            <span id="rate__sign">/</span>
+                            <span id="rate__max">10</span>
+                        </div>
+                    </div>
+                    <div class="info__fix flex-row-wrap">
+                        <p>LAST UPDATE</p>
+                        <p style="text-align: right">RUNNING TIME</p>
+                    </div>
+                    <div class="info flex-row-wrap">
+                        <h5>2007</h5>
+                        <h5 style="text-align: right">2</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script src="../JS/project-4.js"></script>
 </body>
 </html>
-
-
