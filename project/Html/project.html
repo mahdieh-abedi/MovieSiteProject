@@ -10,7 +10,7 @@
     <div id="header" class="flex-row-wrap">
         <div id="header__content" class="flex-row-wrap">
             <label for="search">
-                <input type="search" id="search" alt="text" value="Search">
+                <input id="search" placeholder="Search" type="search" oninput="onSearch(this)">
             </label>
             <button>SignUp</button>
         </div>
@@ -20,27 +20,7 @@
             <h1>Movies</h1>
         </div>
         <div id="main__content" class="flex-row-wrap">
-            <div id="movie" class="flex-column">
-                <img id="movie__img" src="../Img/AvengersEndgame.jpg" alt="1971">
-                <div id="movie__info" class="flex-column">
-                    <div class="info flex-row-wrap">
-                        <h2>1971</h2>
-                        <div style="text-align: right">
-                            <span id="rate__input">8.1</span>
-                            <span id="rate__sign">/</span>
-                            <span id="rate__max">10</span>
-                        </div>
-                    </div>
-                    <div class="info__fix flex-row-wrap">
-                        <p>LAST UPDATE</p>
-                        <p style="text-align: right">RUNNING TIME</p>
-                    </div>
-                    <div class="info flex-row-wrap">
-                        <h5>2007</h5>
-                        <h5 style="text-align: right">2</h5>
-                    </div>
-                </div>
-            </div>
+            <div id="movie" class="flex-column"></div>
         </div>
     </div>
 </div>
